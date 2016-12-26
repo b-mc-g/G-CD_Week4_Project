@@ -161,6 +161,121 @@ In general R script proceeds as follows
     - calculate the mean for a suject/activity pair or grouping
     - write the results into the file "independent_tidy_data_set.txt in the working directory
     
+# Changing labels and Merging Data
+
+Feature labels changes were made in data frames extracted from X_train.txt and X_text.txt using the feature label date avaibable in 
+      
+      features.txt
+   
+Readable Headers are added to following txt file based data frames
+
+      activity_labels
+      y_train
+      y_test
+      subject_test
+      subject_train
+      
+The following .txt file based data frames were merged
+   
+      X_train, y_train and subject_train
+      X_test, y_test and subject_test
+      
+using column binding.
+
+The results of those merges was then merged using row binding to create the single data set.
+
+feature columns with nean() or std() in the labels are filtered.
+Activity id data is augmented by adding a column with a descriptor for each activity id e.g WALKING was added to correspond to activity id 1.
+
+The descriptors are available in 
+
+      activity_labels.txt
+      
+# Creating tidy data file
+
+Selected feature labels are changed to make them more readable based on descriptions in the README and features txt file supplied with the data set. For example t is changed to time, f to frequency, Acc to Accelerator etc. The details are commented in the R script file.
+
+The tidy data file produced is found in the working durectory where the R script was run
+
+The data structure consists of 180 observations of 69 variablesis as follows
+
+      subject_id
+      activity_type
+      activity_id
+      timeBodyAcceleration-mean()-X	
+      timeBodyAcceleration-mean()-Y	
+      timeBodyAcceleration-mean()-Z	
+      timeBodyAcceleration-std()-X	
+      timeBodyAcceleration-std()-Y	
+      timeBodyAcceleration-std()-Z	
+      timeGravityAcceleration-mean()-X	
+      timeGravityAcceleration-mean()-Y	
+      timeGravityAcceleration-mean()-Z	
+      timeGravityAcceleration-std()-X	
+      timeGravityAcceleration-std()-Y	
+      timeGravityAcceleration-std()-Z	
+      timeBodyAccelerationJerk-mean()-X	
+      timeBodyAccelerationJerk-mean()-Y	
+      timeBodyAccelerationJerk-mean()-Z	
+      timeBodyAccelerationJerk-std()-X	
+      timeBodyAccelerationJerk-std()-Y	
+      timeBodyAccelerationJerk-std()-Z	
+      timeBodyGyroscope-mean()-X	
+      timeBodyGyroscope-mean()-Y	
+      timeBodyGyroscope-mean()-Z	
+      timeBodyGyroscope-std()-X	
+      timeBodyGyroscope-std()-Y	
+      timeBodyGyroscope-std()-Z	
+      timeBodyGyroscopeJerk-mean()-X	
+      timeBodyGyroscopeJerk-mean()-Y	
+      timeBodyGyroscopeJerk-mean()-Z	
+      timeBodyGyroscopeJerk-std()-X	
+      timeBodyGyroscopeJerk-std()-Y	
+      timeBodyGyroscopeJerk-std()-Z	
+      timeBodyAccelerationMagnitude-mean()	
+      timeBodyAccelerationMagnitude-std()	
+      timeGravityAccelerationMagnitude-mean()	
+      timeGravityAccelerationMagnitude-std()	
+      timeBodyAccelerationJerkMagnitude-mean()	
+      timeBodyAccelerationJerkMagnitude-std()	
+      timeBodyGyroscopeMagnitude-mean()	
+      timeBodyGyroscopeMagnitude-std()	
+      timeBodyGyroscopeJerkMagnitude-mean()	
+      timeBodyGyroscopeJerkMagnitude-std()	
+      frequencyBodyAcceleration-mean()-X	
+      frequencyBodyAcceleration-mean()-Y	
+      frequencyBodyAcceleration-mean()-Z	
+      frequencyBodyAcceleration-std()-X	
+      frequencyBodyAcceleration-std()-Y	
+      frequencyBodyAcceleration-std()-Z	
+      frequencyBodyAccelerationJerk-mean()-X	
+      frequencyBodyAccelerationJerk-mean()-Y	
+      frequencyBodyAccelerationJerk-mean()-Z	
+      frequencyBodyAccelerationJerk-std()-X	
+      frequencyBodyAccelerationJerk-std()-Y	
+      frequencyBodyAccelerationJerk-std()-Z	
+      frequencyBodyGyroscope-mean()-X	
+      frequencyBodyGyroscope-mean()-Y	
+      frequencyBodyGyroscope-mean()-Z	
+      frequencyBodyGyroscope-std()-X	
+      frequencyBodyGyroscope-std()-Y	
+      frequencyBodyGyroscope-std()-Z	
+      frequencyBodyAccelerationMagnitude-mean()	
+      frequencyBodyAccelerationMagnitude-std()	
+      frequencyBodyBodyAccelerationJerkMagnitude-mean()	
+      frequencyBodyBodyAccelerationJerkMagnitude-std()	
+      frequencyBodyBodyGyroscopeMagnitude-mean()	
+      frequencyBodyBodyGyroscopeMagnitude-std()	
+      frequencyBodyBodyGyroscopeJerkMagnitude-mean()	
+      frequencyBodyBodyGyroscopeJerkMagnitude-std()
+      
+180 observations are the result of the mean calculation on the column wise grouping of data for subject and activity ids.
+
+
+
+
+
+
 
     
     
