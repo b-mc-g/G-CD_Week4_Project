@@ -193,7 +193,7 @@ The descriptors are available in
       
 # Creating tidy data file
 
-Selected feature labels are changed to make them more readable based on descriptions in the README and features txt file supplied with the data set. For example t is changed to time, f to frequency, Acc to Accelerator etc. The details are commented in the R script file.
+Selected feature labels are changed to make them more readable based on descriptions in the README and features .txt files supplied with the data set. For example t is changed to time, f to frequency, Acc to Accelerator etc. The details are commented in the R script file and mapping back to the original labels is possible which are partly described in the original feature.txt file repeated above for convenience.
 
 The tidy data file produced is found in the working durectory where the R script was run
 
@@ -271,7 +271,21 @@ The data structure consists of 180 observations of 69 variablesis as follows
       
 180 observations are the result of the mean calculation on the column wise grouping of data for subject and activity ids.
 
+# Tidy Data Criteria
+The tidy data set produced confirms partly to the tidy data criteria repeated below
 
+      1. Each variable forms a column.
+      2. Each observation forms a row.
+      3. Each type of observational unit forms a table.
+
+The activity_id and activity_type columns both refer to the same variable one numeric and one descriptive. They are interchangable and one could be deleted to make the data more tidy however it was decided to keep the id data in the table to avoid any subsequent transformation from descriptor to id should it be required.
+
+
+# References
+1. http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
+2. Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. Human Activity Recognition on Smartphones using a Multiclass Hardware-Friendly Support Vector Machine. International Workshop of Ambient Assisted Living (IWAAL 2012). Vitoria-Gasteiz, Spain. Dec 2012, http://www.icephd.org/sites/default/files/IWAAL2012.pdf
+3. Tidy Data, Hadley Wickam, http://vita.had.co.nz/papers/tidy-data.pdf
+4. Getting and Cleaning the Assignment, David Hood, https://thoughtfulbloke.wordpress.com/2015/09/09/getting-and-cleaning-the-assignment/
 
 
 
