@@ -27,7 +27,7 @@ The purpose of this project is to demonstrate the ability to collect, work with,
         4) Appropriately labels the data set with descriptive variable names.
         5) From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
     
-# Files in this Repository
+# Key files in this Repository
     
     Codebook.md - information about the data sources, files, variables, analysis scripts and outputs
     run_analysis.R - the R script to load, transform and write the tidy data
