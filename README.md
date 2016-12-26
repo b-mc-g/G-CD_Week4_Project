@@ -46,6 +46,11 @@
     #The file written is called 
     
             #independent_tidy_data_set.txt
+            
+# How the script works
+The detailled working of the script is described using comments in the R script itself.
+In general
+data is read into dat frames for ease of working
 
     
     
