@@ -29,7 +29,7 @@ The purpose of this project is to demonstrate the ability to collect, work with,
     
     Codebook.md - information about the data and variables
     run_analysis.R - the R script to load, transform and write the tidy data
-    README.md - General description og the project, dat, objectives and outputs
+    README.md - General description of the project, its data, objectives and outputs
     
     
 # Steps to create the tidy data file
@@ -48,9 +48,23 @@ The purpose of this project is to demonstrate the ability to collect, work with,
             independent_tidy_data_set.txt
             
 # How the script works
-The detailled working of the script is described using comments in the R script itself.
-In general
-data is read into dat frames for ease of working
+
+The detailled working of the script is described using comments in the R script itself. The main areas of the script are divided into data downloading and unzipping and Sections ( 1 to 4) that correspondapproximately with the tasks defined in the assignment definition. 
+
+Section 1 - Goals of this section are
+    Use descriptive activity names to name the activities in the data set
+    Appropriately label the data set with descriptive variable names
+Section 2 - Goal of this section is
+    Merge the training and the test sets to create one data set
+Section 3 - Goal of this section is
+    Extract only the measurements on the mean and standard deviation for each measurement
+Section 4 - Goal of this section is
+    From the data set above, data_mean_std_activity_descriptors, , create a second, independent tidy data set with the 
+    average of each variable for each activity and each subject
+
+Section 2 and 3 overlap in that they both deal with changing labels into more readable forms for different data frames. 
+
+
 
     
     
