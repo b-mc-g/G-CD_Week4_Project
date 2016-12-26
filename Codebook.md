@@ -1,10 +1,13 @@
 # Data Source and background
 
-Please read the file supplied with the downloaded data set in
-./UCI HAR Dataset/README.txt for a description of the experiment process and data collected.
+Please read the file supplied with the downloaded data set in 
+   ./UCI HAR Dataset/README.txt 
+for a description of the experiment process, data collected and licensing obligations.
 
-The information is repeated here for convenience
+The information is repeated below for convenience. Please proceed to section "Data Analysis and transformation" for more specific information to this assignment solution
 
+--------------------
+Readme.txt repeated
 ==================================================================
 Human Activity Recognition Using Smartphones Dataset
 Version 1.0
@@ -140,10 +143,27 @@ tBodyGyroJerkMean
 
 The complete list of variables of each feature vector is available in 'features.txt'
 
-# Data Analsis and transformation
+# Data Analysis and transformation
 
-Please refer also to the comments in the R script file that describe also details of the dta transformation steps.
-In general the s
+Please refer also to the comments in the R script file that describe also details of the data transformation steps.
+
+In general R script proceeds as follows
+
+    - data is downloaded
+    - data is unzipped and stored in working directory
+    - train, test, activity, subject and feature label data are read into data frames
+    - selected labels are converted to more descriptive labels
+      - activity ID to activity Name e.g 1 to Walking
+      - feature column number to Feature Name COl(1) to tBodyAcc-meaN()-X
+    - merger training and test data sets to create one data set
+    - extract only those feature colums related to mean() or std() - standard deviation
+    - group this data by subject and by activity
+    - calculate the mean for a suject/activity pair or grouping
+    - write the results into the file "independent_tidy_data_set.txt in the working directory
+    
+
+    
+    
 
 
 
