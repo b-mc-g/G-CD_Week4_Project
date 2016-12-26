@@ -1,9 +1,7 @@
 # Data Source and background
 
-Please read the README.txt file supplied with the downloaded data set in
-./UCI HAR Dataset/README.txt for a description of the experiment and data collected.
-
-Here you will also find the list of files in the download package
+Please read the file supplied with the downloaded data set in
+./UCI HAR Dataset/README.txt for a description of the experiment process and data collected.
 
 The information is repeated here for convenience
 
@@ -78,8 +76,11 @@ This dataset is distributed AS-IS and no responsibility implied or explicit can 
 
 Jorge L. Reyes-Ortiz, Alessandro Ghio, Luca Oneto, Davide Anguita. November 2012.
 
-In addition the features measured are also described in features_info.txt. This is also repeated below for convenience
-  Feature Selection 
+# In addition the features measured are also described in features_info.txt. 
+
+This is also repeated below for convenience
+
+Feature Selection 
 =================
 
 The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz. 
@@ -138,6 +139,12 @@ tBodyGyroMean
 tBodyGyroJerkMean
 
 The complete list of variables of each feature vector is available in 'features.txt'
+
+# Data Analsis and transformation
+
+Please refer also to the comments in the R script file that describe also details of the dta transformation steps.
+In general the s
+
 
 
 
