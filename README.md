@@ -1,6 +1,8 @@
 # G-CD_Week4_Project
 # Getting and Cleaning Data Course Project
 
+The text from the assignment definition is repeated below for convenience with minor changes. Please proceed below to section labelled  "Files in this Repository " for more specific information on the solution.
+
 The purpose of this project is to demonstrate the ability to collect, work with, and clean a data set. The goal is to prepare tidy data that can be used for later analysis. You will be graded by your peers on a series of yes/no questions related to the project. 
 
     You will be required to submit: 
@@ -25,9 +27,9 @@ The purpose of this project is to demonstrate the ability to collect, work with,
         4) Appropriately labels the data set with descriptive variable names.
         5) From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
     
-# Files in this Repo
+# Files in this Repository
     
-    Codebook.md - information about the data and variables
+    Codebook.md - information about the data sources, files, variables, analysis scripts and outputs
     run_analysis.R - the R script to load, transform and write the tidy data
     README.md - General description of the project, its data, objectives and outputs
     
@@ -54,10 +56,13 @@ The detailled working of the script is described using comments in the R script 
 Section 1 - Goals of this section are
     Use descriptive activity names to name the activities in the data set
     Appropriately label the data set with descriptive variable names
+    
 Section 2 - Goal of this section is
     Merge the training and the test sets to create one data set
+    
 Section 3 - Goal of this section is
     Extract only the measurements on the mean and standard deviation for each measurement
+    
 Section 4 - Goal of this section is
     From the data set above, data_mean_std_activity_descriptors, , create a second, independent tidy data set with the 
     average of each variable for each activity and each subject
