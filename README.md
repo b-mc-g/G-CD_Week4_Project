@@ -54,16 +54,20 @@ The purpose of this project is to demonstrate the ability to collect, work with,
 The detailled working of the script is described using comments in the R script itself. The main areas of the script are divided into data downloading and unzipping and Sections ( 1 to 4) that correspondapproximately with the tasks defined in the assignment definition. 
 
 Section 1 - Goals of this section are
+
     Use descriptive activity names to name the activities in the data set
     Appropriately label the data set with descriptive variable names
     
 Section 2 - Goal of this section is
+
     Merge the training and the test sets to create one data set
     
 Section 3 - Goal of this section is
+
     Extract only the measurements on the mean and standard deviation for each measurement
     
 Section 4 - Goal of this section is
+
     From the data set above, data_mean_std_activity_descriptors, , create a second, independent tidy data set with the 
     average of each variable for each activity and each subject
 
