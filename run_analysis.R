@@ -174,7 +174,6 @@ names (data_mean_std_activity_descriptors) <- gsub ("Acc", "Acceleration", names
 
 tidy_data_set = ddply(data_mean_std_activity_descriptors, c("subject_id", "activity_type"), numcolwise(mean))
 
-
-# wite the data fram contents to a file, "independent_tidy_data_set.txt", in the working directory
-write.table (tidy_data_set, file="independent_tidy_data_set.txt")
+# write the data fram contents to a file, "independent_tidy_data_set.txt", in the working directory
+write.table (tidy_data_set, file="independent_tidy_data_set.txt", row.name=FALSE)
 
